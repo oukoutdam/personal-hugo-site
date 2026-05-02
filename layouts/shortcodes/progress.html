@@ -1,0 +1,16 @@
+{{ $name := .Get "name" }}
+{{ $value := .Get "value" }}
+{{ $level := .Get "level" | default "" }}
+
+{{ $color := "#6b7280" }}
+{{ if eq $level "Advanced" }}{{ $color = "#22c55e" }}
+{{ else if eq $level "Intermediate" }}{{ $color = "#3b82f6" }}
+{{ else if eq $level "Beginner" }}{{ $color = "#f97316" }}
+{{ end }}
+
+<div style="display:flex; flex-direction:row; align-items:center; margin-bottom:0.75rem;">
+  <span style="width:40%; flex-shrink:0;">{{ $name }}</span>
+  <div style="margin-left:1.5rem; height:0.5rem; width:60%; border-radius:9999px; background-color:var(--bg-variant);">
+    <div style="height:0.5rem; border-radius:9999px; background-color:{{ $color }}; width:{{ $value }}%;"></div>
+  </div>
+</div>

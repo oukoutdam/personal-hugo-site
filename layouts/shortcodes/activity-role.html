@@ -1,0 +1,8 @@
+{{ $title := .Get "title" }}
+{{ $period := .Get "period" }}
+{{ $current := .Get "current" | default "" }}
+
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; margin-top: 0.3rem; padding-left: 1rem;">
+  <span style="opacity: 0.8;">{{ $title }}{{ if eq $current "true" }} &nbsp;<span style="font-size: 0.75em; font-weight: 600; color: var(--secondary);">Current</span>{{ end }}</span>
+  <span style="flex-shrink: 0; opacity: 0.7; font-size: 0.9em; white-space: nowrap;">{{ $period }}</span>
+</div>
