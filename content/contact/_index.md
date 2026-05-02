@@ -44,9 +44,17 @@ Feel free to reach out, I'll get back to you as soon as I can.
     <textarea id="message" name="message" class="form-control" rows="5" placeholder="Your message..." required></textarea>
   </div>
 
-  <div class="h-captcha" data-captcha="true"></div>
+  <div class="h-captcha" data-captcha="true" data-callback="onCaptchaSuccess" data-expired-callback="onCaptchaExpired"></div>
 
-  <button type="submit" class="btn btn-dark">Send Message</button>
+  <button type="submit" id="submit-btn" class="btn btn-dark mt-3" disabled>Send Message</button>
 </form>
 
 <script src="https://web3forms.com/client/script.js" async defer></script>
+<script>
+  function onCaptchaSuccess() {
+    document.getElementById('submit-btn').disabled = false;
+  }
+  function onCaptchaExpired() {
+    document.getElementById('submit-btn').disabled = true;
+  }
+</script>
