@@ -7,6 +7,10 @@ languageCode = "en-us"
 baseURL = "https://www.oukoutdam.com/"
 copyright = "© {year} Ouk Outdam"
 
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
 [markup]
   [markup.highlight]
     style = 'dracula'
