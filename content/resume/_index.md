@@ -38,7 +38,7 @@ toc = true
 </style>
 
 <div class="profile-section">
-  <img src="{{ "/images/oukoutdam_photo.jpeg" | relURL }}" class="profile-image" />
+  <img src="/images/oukoutdam_photo.jpeg" class="profile-image" />
   <dl class="profile-info">
     <dt>Name</dt>
     <dd>Ouk Outdam<br>អ៊ុក ឧត្តម<br>オック　オドム</dd>
