@@ -2,6 +2,7 @@
 # when running the example site
 # from a subdir of the theme
 title = "Ouk Outdam"
+enableRobotsTXT = true
 theme = "not-much"
 languageCode = "en-us"
 baseURL = "https://oukoutdam.github.io/personal-hugo-site/"
