@@ -4,7 +4,7 @@
 title = "Ouk Outdam"
 theme = "not-much"
 languageCode = "en-us"
-baseURL = "https://www.oukoutdam.com/"
+baseURL = "https://oukoutdam.github.io/personal-hugo-site/"
 copyright = "© {year} Ouk Outdam"
 
 [caches]
